@@ -3,3 +3,9 @@ paradox/
 
 # Ignore all CSV files
 *.csv
+
+# Environment variables (secrets)
+.env
+
+# Python cache
+__pycache__/
