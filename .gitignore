@@ -1,3 +1,5 @@
 # Python virtual environments
 paradox/
-dummy trades.csv
+
+# Ignore all CSV files
+*.csv
