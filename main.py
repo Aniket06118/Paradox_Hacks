@@ -42,17 +42,12 @@ if __name__ == "__main__":
 
     report = run_analysis(r"C:\Users\Aniket\Documents\AI-ML\Machine Learning\Hackathons\Paradox_Hacks\dummy_trades (1).csv")
 
-    print(json.dumps(report, indent=4))
+    #print(json.dumps(report, indent=4))
 
     # Generate LLM interpretation report
     print("\n" + "=" * 80)
     print("📋 LLM PERFORMANCE REPORT")
     print("=" * 80 + "\n")
 
-    try:
-        llm_output = generate_report(report)
-        print(llm_output)
-    except ValueError as e:
-        print(f"⚠️  {e}")
-    except Exception as e:
-        print(f"❌ Error generating LLM report: {e}")
+    llm_output = generate_report(report)
+    print(llm_output)
