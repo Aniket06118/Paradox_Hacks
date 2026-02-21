@@ -40,9 +40,9 @@ def run_analysis(data_path):
 if __name__ == "__main__":
     from llm_report import generate_report
 
-    report = run_analysis(r"C:\Users\Aniket\Documents\AI-ML\Machine Learning\Hackathons\Paradox_Hacks\dummy_trades (1).csv")
+    report = run_analysis(r"C:\Users\Aniket\Documents\AI-ML\Machine Learning\Hackathons\Paradox_Hacks\dummy_trades.csv")
 
-    #print(json.dumps(report, indent=4))
+    print(json.dumps(report, indent=4))
 
     # Generate LLM interpretation report
     print("\n" + "=" * 80)
