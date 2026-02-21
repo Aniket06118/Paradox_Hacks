@@ -42,3 +42,8 @@ def validate_market_features(df):
         raise ValueError(f"Missing market columns: {missing}")
 
     return df
+
+# test_df=load_data(r"C:\Users\Aniket\Documents\AI-ML\Machine Learning\Hackathons\Paradox_Hacks\dummy_trades.csv")
+# test_df=validate_market_features(test_df)
+# pd.set_option('display.max_columns', None)
+# print(test_df.head())
